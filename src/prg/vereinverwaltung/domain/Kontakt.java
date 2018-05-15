@@ -6,6 +6,7 @@ package prg.vereinverwaltung.domain;
  * @author jsucur
  * @version 1.0
  */
+//Kommentar
 public class Kontakt {
 
 	private int telefon;
