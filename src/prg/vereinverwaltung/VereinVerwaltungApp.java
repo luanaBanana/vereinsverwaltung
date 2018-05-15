@@ -4,12 +4,9 @@ import prg.vereinverwaltung.business.api.Verwaltung;
 import prg.vereinverwaltung.ui.UI;
 import prg.vereinverwaltung.ui.dummi.VerwaltungDummy;
 
-/**
- * Diese Klasse ermöglicht das Starten der Applikation.
- * 
- * @author jsucur
- * @version 1.0
- */
+
+//lloooolllooooolllllooooolloooooolllllooool
+
 public class VereinVerwaltungApp {
 
 	public static void main(String[] args) {
