@@ -1,5 +1,7 @@
 package prg.vereinverwaltung.domain;
 
+import java.time.LocalDate;
+
 /**
  * Diese Klasse bildet eine Person ab.
  * 
@@ -8,6 +10,28 @@ package prg.vereinverwaltung.domain;
  */
 public class Person {
 
-	// TODO ...
+		private String name;
+		private String vorname;
+		private LocalDate geburtsdatum;
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public String getVorname() {
+			return vorname;
+		}
+		public void setVorname(String vorname) {
+			this.vorname = vorname;
+		}
+		public LocalDate getGeburtsdatum() {
+			return geburtsdatum;
+		}
+		public void setGeburtsdatum(LocalDate geburtsdatum) {
+			this.geburtsdatum = geburtsdatum;
+		}
+		
+	}
 
-}
+// Hello comment
