@@ -5,6 +5,12 @@ public class Adresse {
 	private int plz;
 	private String strasse;
 	private String ort;
+	
+	public Adresse(int plz, String strasse, String ort) {
+		this.plz=plz;
+		this.strasse=strasse;
+		this.ort=ort;
+	}
 
 	public int getPlz() {
 		return plz;

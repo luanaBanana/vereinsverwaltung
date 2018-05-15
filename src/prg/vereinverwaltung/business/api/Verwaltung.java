@@ -4,13 +4,7 @@ import java.util.List;
 
 import prg.vereinverwaltung.domain.Person;
 
-/**
- * Diese Schnittstelle gibt die Funktionalitäten vor, welche für die Verwaltung
- * von Pesonendaten benötigt werden.
- * 
- * @author jsucur
- * @version 1.0
- */
+
 public interface Verwaltung {
 
 	/**

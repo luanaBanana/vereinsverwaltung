@@ -5,8 +5,6 @@ import prg.vereinverwaltung.ui.UI;
 import prg.vereinverwaltung.ui.dummi.VerwaltungDummy;
 
 
-//lloooolllooooolllllooooolloooooolllllooool
-
 public class VereinVerwaltungApp {
 
 	public static void main(String[] args) {

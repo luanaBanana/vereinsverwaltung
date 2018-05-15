@@ -2,17 +2,30 @@ package prg.vereinverwaltung.domain;
 
 import java.time.LocalDate;
 
-/**
- * Diese Klasse bildet eine Person ab.
- * 
- * @author jsucur
- * @version 1.0
- */
 public class Person {
 
 	private String name;
 	private String vorname;
 	private LocalDate geburtsdatum;
+	private int mitgliedsnummer;
+
+	public Person(String name, String vorname, LocalDate geburtsdatum, int mitgliedsnummer, 
+			int telefon, String email, int plz, String strasse, String ort) {
+		new Kontakt(telefon, email);
+		new Adresse(plz, strasse, ort);
+		this.name = name;
+		this. vorname = vorname;
+		this.geburtsdatum = geburtsdatum;
+		this.mitgliedsnummer = mitgliedsnummer;	
+	}
+
+	public int getMitgliedsnummer() {
+		return mitgliedsnummer;
+	}
+
+	public void setMitgliedsnummer(int mitgliedsnummer) {
+		this.mitgliedsnummer = mitgliedsnummer;
+	}
 
 	public String getName() {
 		return name;
