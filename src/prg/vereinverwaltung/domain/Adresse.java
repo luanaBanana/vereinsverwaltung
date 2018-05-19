@@ -1,6 +1,8 @@
 package prg.vereinverwaltung.domain;
 
 public class Adresse {
+	
+	// komment01
 
 	private int plz;
 	private String strasse;
