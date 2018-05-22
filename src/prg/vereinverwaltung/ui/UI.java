@@ -110,7 +110,7 @@ public class UI {
 				}
 				
 				if (wahl1 == 3) {
-					// Zurück? 
+					// Zurück 
 					menu = MENU_1_0_0;
 					
 					
