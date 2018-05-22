@@ -1,10 +1,13 @@
 package prg.vereinverwaltung.business.impl;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.Comparator;
 
 import prg.vereinverwaltung.business.api.Verwaltung;
 import prg.vereinverwaltung.domain.Person;
 import prg.vereinverwaltung.persister.api.Persister;
+import prg.vereinverwaltung.persister.impl.plaintext.PersisterImpl;
 
 /**
  * Diese Klasse stellt eine konkrete Implementierung der Schnittstelle
@@ -32,8 +35,8 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public Person personHinzuguefen(Person person) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		persister.speichern(person);
+		return person;
 	}
 
 	/*
@@ -44,8 +47,8 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public Person personAktualisieren(Person person) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		persister.aktualisieren(person);
+		return person;
 	}
 
 	/*
@@ -56,7 +59,7 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public boolean personLoeschen(Person person) throws Exception {
-		// TODO Auto-generated method stub
+		persister.loeschen(person);
 		return false;
 	}
 
@@ -68,7 +71,7 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public List<Person> finde(String name, String vorname) throws Exception {
-		// TODO Auto-generated method stub
+		persister.finde(name, vorname);
 		return null;
 	}
 
@@ -79,7 +82,7 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public Person finde(int personNummer) throws Exception {
-		// TODO Auto-generated method stub
+		persister.finde(personNummer);
 		return null;
 	}
 
@@ -90,7 +93,7 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public List<Person> alle() throws Exception {
-		// TODO Auto-generated method stub
+		persister.alle();
 		return null;
 	}
 }
