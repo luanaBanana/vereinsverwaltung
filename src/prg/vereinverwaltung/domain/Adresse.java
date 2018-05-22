@@ -1,7 +1,7 @@
 package prg.vereinverwaltung.domain;
 
 public class Adresse {
-
+	
 	private int plz;
 	private String strasse;
 	private String ort;
