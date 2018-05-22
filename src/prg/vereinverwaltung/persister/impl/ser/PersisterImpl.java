@@ -1,5 +1,7 @@
 package prg.vereinverwaltung.persister.impl.ser;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.util.List;
 
 import prg.vereinverwaltung.domain.Person;
@@ -24,8 +26,28 @@ public class PersisterImpl implements Persister {
 	@Override
 	public Person speichern(Person person) throws Exception {
 		// TODO Auto-generated method stub
+		
+		String fileName = "mitgliederdatenbank";
+		File mitgliederdatenbank = new File(fileName);
+		try
+		{
+			if (file.exists())	
+			{
+				FileWriter writer = new FileWriter(fileName, true);
+				writer.append(person.getName());
+				writer.append(person.getVorname());
+				writer.append(person.getGeburtsdatum());
+				writer.append(person.getMitgliedsnummer());
+				writer.append(person.getAdresse().getStrasse());
+				writer.append(person.getAdresse().getOrt());
+				writer.append(person.getAdresse().getPlz());
+				writer.append(person.getKontakt().getEmail());
+				writer.append(person.getKontakt().getTelefon());
+			}
+		
+
 		return null;
-	}
+	};
 
 	/*
 	 * (non-Javadoc)

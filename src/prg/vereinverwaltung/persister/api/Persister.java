@@ -1,5 +1,7 @@
 package prg.vereinverwaltung.persister.api;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 import prg.vereinverwaltung.domain.Person;
@@ -29,7 +31,11 @@ public interface Persister {
 	 * @return
 	 * @throws Exception
 	 */
-	Person aktualisieren(Person person) throws Exception;
+	Person aktualisieren(Person person) throws Exception
+	{
+		
+			
+	}
 
 	/**
 	 * Entfernt die übergehbene Person aus dem Datenbestand.

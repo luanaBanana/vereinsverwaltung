@@ -8,17 +8,39 @@ public class Person {
 	private String vorname;
 	private LocalDate geburtsdatum;
 	private int mitgliedsnummer;
+	private Kontakt kontakt;
+	private Adresse adresse;
 
 	public Person(String name, String vorname, LocalDate geburtsdatum, int mitgliedsnummer, 
 			int telefon, String email, int plz, String strasse, String ort) {
-		new Kontakt(telefon, email);
-		new Adresse(plz, strasse, ort);
+		this.kontakt = new Kontakt(telefon, email);
+		this.adresse = new Adresse(plz, strasse, ort);
 		this.name = name;
 		this. vorname = vorname;
 		this.geburtsdatum = geburtsdatum;
 		this.mitgliedsnummer = mitgliedsnummer;	
 	}
 
+	
+	
+	
+	public Kontakt getKontakt() {
+		return kontakt;
+	}
+
+	public void setKontakt(Kontakt kontakt) {
+		this.kontakt = kontakt;
+	}
+
+	public Adresse getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(Adresse adresse) {
+		this.adresse = adresse;
+	}
+
+	
 	public int getMitgliedsnummer() {
 		return mitgliedsnummer;
 	}
